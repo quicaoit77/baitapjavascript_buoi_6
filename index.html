@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>BÀI TẬP JAVASCRIPT - BUÔI 6</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center text-danger my-5">BÀI TẬP JAVASCRIPT BUỔI 6</h1>
+        <div class="mb-5">
+            <h3><b>TRANG 28: VÒNG LẶP FOR/WHILE</b></h3>
+            <div class="my-5 d-flex">
+                <div class="col-5">
+                    <h4 class="text-danger"><u>Bài 1:</u> TÌM SỐ NGUYÊN DƯƠNG</h4>
+                    <form>
+                        <div class="d-flex flex-column">
+                            <select class="mb-3 py-1" id="chanLe">
+                                <option value="1">Số chẵn</option>
+                                <option value="2">Số lẻ</option>
+                            </select>
+                            <select class="mb-3 py-1" id="whileFor">
+                                <option value="1">Vòng lặp While</option>
+                                <option value="2">vòng lặp For</option>
+                            </select>
+                            <select class="mb-3 py-1" id="phuongThuc">
+                                <option value="1">Bước nhảy</option>
+                                <option value="2">Chia hết cho 2</option>
+                            </select>
+                        </div>
+                        <div class="mt-3">
+                            <button id="btnIn" class="btn btn-danger" type="submit">KẾT QUẢ</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-7">
+                    <h3 class="divShowInfoChanLe alert-danger"></h3>
+                </div>
+            </div>
+
+            <div class="my-5 d-flex align-items-center">
+                <div class="col-5">
+                    <h4 class="text-danger"><u>Bài 2:</u> TÍNH TỔNG CÁC SỐ CHẴN</h4>
+                    <form action="">
+                        <div class="d-flex flex-column">
+                            <input type="number" id="number" placeholder="Nhập số nguyên bất kỳ">
+                        </div>
+                        <select class="my-3 py-1" id="whileFor2">
+                            <option value="1">Vòng lặp While</option>
+                            <option value="2">Vòng lặp For</option>
+                        </select>
+                        <div class="mt-3">
+                            <button id="btnKq" class="btn btn-danger" type="submit">KẾT QUẢ</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-7">
+                    <h3 class="outPutTongSoChan alert-warning"></h3>
+                </div>
+            </div>
+
+
+            <div class="my-5 d-flex align-items-center">
+                <div class="col-5">
+                    <h4 class="text-danger"><u>Bài 3:</u> CÁC SỐ CHIA HẾT CHO 3</h4>
+                    <form>
+                        <select class="mb-3 py-1" id="whileFor3">
+                            <option value="1">Vòng lặp While</option>
+                            <option value="2">Vòng lặp For</option>
+                        </select>
+                        <div class="mt-3">
+                            <button id="btnKetQua" class="btn btn-danger" type="submit">KẾT QUẢ</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-7">
+                    <h3 class="divShowInfoChiaHetCho3 alert-danger"></h3>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h3><b>Trang 38: BÀI TẬP VÒNG LẶP </h3>
+            <div class="my-5 d-flex">
+                <div class="col-5">
+                    <h4 class="text-danger"><u>Bài 1:</u> TÌM SỐ NGUYÊN NHỎ NHẤT</h4>
+                    <form action="">
+                        <div class="mt-3">
+                            <button id="btnTinhNguyenDuong" class="btn btn-danger" type="submit">KẾT QUẢ</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-7">
+                    <h3 class="divShowInfoSoNguyenDuongNhoNhat alert-danger"></h3>
+                </div>
+            </div>
+
+            <div class="my-5 d-flex align-items-center">
+                <div class="col-5">
+                    <h4 class="text-danger"><u>Bài 2:</u> TÍNH TỔNG XY</h4>
+                    </p>
+                    <form>
+                        <div class="d-flex flex-column">
+                            <label class="text-muted">Nhập X</label>
+                            <input type="number" id="x">
+                        </div>
+                        <div class="d-flex flex-column">
+                            <label class="text-muted">Nhập Y</label>
+                            <input type="number" id="y">
+                        </div>
+                        <div class="mt-3">
+                            <button id="btnTinhXY" class="btn btn-danger" type="submit">KẾT QUẢ</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-7">
+                    <h3 class="divShowInfoTinhTongXY alert-danger"></h3>
+                </div>
+            </div>
+
+
+            <div class="my-5 d-flex align-items-center">
+                <div class="col-5">
+                    <h4 class="text-danger"><u>Bài 3:</u> TÍNH GIAI THỪA.</h4>
+                    <form>
+
+                        <div class="d-flex flex-column">
+                            <label class="text-muted">Nhập số nguyên</label>
+                            <input type="number" name="number" id="soNguyen">
+                        </div>
+
+                        <div class="mt-3">
+                            <button id="btnTinhGiaThua" class="btn btn-danger" type="submit">KẾT QUẢ</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-7">
+                    <h3 class="divShowInfoTinhGiaThua alert-danger"></h3>
+                </div>
+            </div>
+
+
+            <div class="my-5 d-flex align-items-center">
+                <div class="col-5 d-flex flex-column justify-content-center" style="height: 310px">
+                    <h4 class="text-danger">IN THẺ DIV</h4>
+                    <form>
+
+                        <div class="mt-3">
+                            <button id="btnInThe" class="btn btn-danger" type="submit">KẾT QUẢ</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-7">
+                    <h3 class="divShowInfoInThe alert-danger"></h3>
+                </div>
+            </div>
+
+
+            <div class="my-5 d-flex align-items-center">
+                <div class="col-5">
+                    <h4 class="text-danger"><u>Bài 5:</u> TÌM SỐ NGUYÊN TỐ</h4>
+                    <form>
+
+
+                        <div class="d-flex flex-column">
+                            <label class="text-muted">Nhập số nguyên tố</label>
+                            <input type="number" name="number" id="soNguyenTo">
+                        </div>
+
+                        <div class="mt-3">
+                            <button id="btnTinhSoNguyenTo" class="btn btn-danger" type="submit">KẾT QUẢ</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-7">
+                    <h3 class="divShowInfoSoNguyenTo alert-danger"></h3>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+
+
+    <script src="./baiTapTrang28/baiTap1/js/baiTap1.js"></script>
+    <script src="./baiTapTrang28/baiTap2/js/baiTap2.js"></script>
+    <script src="./baiTapTrang28/baiTap3/js/baiTap3.js"></script>
+
+
+    <script src="./baiTapTrang38/baiTap1/js/baiTap1.js"></script>
+    <script src="./baiTapTrang38/baiTap2/js/baiTap2.js"></script>
+    <script src="./baiTapTrang38/baiTap3/js/baiTap3.js"></script>
+    <script src="./baiTapTrang38/baiTap4/js/baiTap4.js"></script>
+    <script src="./baiTapTrang38/baiTap5/js/baiTap5.js"></script>
+
+</body>
+
+</html>
